@@ -1,5 +1,5 @@
 FROM alpine:latest
-ADD https://storage.googleapis.com/kubernetes-release/release/v1.14.0/bin/linux/amd64/kubectl /usr/local/bin/kubectl
+ADD https://storage.googleapis.com/kubernetes-release/release/v1.15.9/bin/linux/amd64/kubectl /usr/local/bin/kubectl
 ENV HOME=/config
 RUN set -x && \
     apk add --no-cache curl ca-certificates && \
